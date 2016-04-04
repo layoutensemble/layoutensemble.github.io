@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Graph Stability</title>
+
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-2.2.2.min.js"></script>
+
+    <link rel="stylesheet" href="style/bootmetro/min/bootmetro-icons.min.css" type="text/css" />
+    <link rel="stylesheet" href="style/bootmetro/min/bootmetro.min.css" type="text/css" />
+
+	<script src="lib/underscore.js"></script>
+    <script src="lib/box.js"></script>
+    <script src="lib/jquery-scroll.js"></script>
+	
+    <script src="assests/app.min.js"></script>
+
+    <link rel="stylesheet" href="style/style.css" type="text/css" />
+</head>
+<body>
+    <div id="main-ui">
+        <div id="data-source-panel" hidden>
+            <span>Data: </span>
+            <select id="data-list" style="width: 480px;"></select>
+            <button id="data-load">Load Data</button>
+        </div>
+        <div id="leftside" class="multi-view">
+            <div id="selection-div"></div>
+            <hr />
+            <div id="mainview-div"></div>
+            <hr />
+            <div id="featureview-div"></div>
+        </div>
+        <div id="vertical-splitter" class="multi-view">
+            
+        </div>
+        <div id="rightside" class="multi-view">
+            <div id="nodelistview-div"></div>
+            <div id="controlpanel-div"></div>
+        </div>
+    </div>
+    <div style="clear:both"></div>
+
+    <div id="tooltip" style="visibility: hidden;"></div>
+    <div id="context-menu" style="visibility: hidden">Context Menu</div>
+    <div id="color-picker" style="visibility: hidden"></div>
+    <div id="confirm-popup" style="visibility: hidden"></div>
+    <div id="loading-block" style="visibility: hidden" ></div>
+    <canvas id="gpu-device" width="12288" height="1024" style="width: 12288px;height:1024px; display:none"> </canvas>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            var app = new research.graph.stability.App(document.getElementById("main-ui"));
+            app.run("test");
+        }
+    </script>
+</body>
+</html>
