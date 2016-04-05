@@ -44,6 +44,11 @@
                                         American Football Network
                                     </a>
                                 </li>
+                                <li class="">
+                                    <a href="#CoauthorGraph">
+                                        Coauthor Network
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -170,6 +175,71 @@
                             <a class="btn btn-inverse btn-large" href="./data/output/AmericanFootball.json">
                                 Data
                             </a>
+                        </div>
+                    </div>
+                    <div class="bs-docs-section">
+                        <div>
+                            <h1 id="CoauthorGraph">
+                                Infovis Coauthor Network
+                            </h1>
+                        </div>
+                        <hr />
+                        <div style="background-color: #eee; font-size: 16px;">
+                            <table class="table" style="border: 0; margin: 10px;">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            Infovis coauthor graph, 2005 - 2015
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Data size:
+                                        </td>
+                                        <td>
+                                            |V| = 500, |E| = 1463
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Layout algorithm:
+                                        </td>
+                                        <td>
+                                            Hu Yifan Algorithm
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Ensemble size:
+                                        </td>
+                                        <td>
+                                            100
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Load cost (pre processed data):
+                                        </td>
+                                        <td>
+                                            <del>300M</del>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="offset1" style="margin-top:10px">
+                            <img src="./imgs/coauthor-thumb.png" class="image-polaroid" style="width: 450px" alt="American football network data thumbnail" />
+                        </div>
+                        <div class="btn-group" style="margin-top: 10px">
+                            <div class="btn btn-inverse btn-large"  disabled>
+                                Demo
+                            </div>
+                            <a class="btn btn-inverse btn-large" href="./data/output/coauthor.json">
+                                Data
+                            </a>
+                        </div>
+                        <div class="alert alert-info" style="margin-top: 10px; background-color: #909090; border-color: #e5e5e5; font-size: 16px">
+                            <em> Because of the data size of the coauthor network, it can only run on local machine. So here is no online demo for this case. </em>
                         </div>
                     </div>
                 </div>
