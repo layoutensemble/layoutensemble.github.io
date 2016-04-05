@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Layout Ensemble
+        </title>
+        <link rel="stylesheet" href="./style/bootmetro/min/bootmetro.min.css" type="text/css" />
+        <link rel="stylesheet" href="./style/bootmetro/min/bootmetro-ui-light.min.css" type="text/css" />
+        <link rel="stylesheet" href="./style/bootmetro/min/bootmetro-responsive.min.css" type="text/css" />
+        <link rel="stylesheet" href="./style/docs.css" type="text/css" />
+        
+	    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-2.2.2.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    </head>
+    
+    <body class="bs-docs-docs" data-spy="scroll" data-target="#sidebar" data-offset=50>
+        <div class="navbar metro-navbar navbar-fixed-top">
+            <div class="navbar-inner" style="height: 70px">
+                <div class="container" style="margin-top: 5px">
+                    <h1 style="margin: 5px">
+                        A Framework for Uncertainty-aware Graph Layout Exploration
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin-top: 15px">
+            <div class="row">
+                <div class="bs-docs-sidebar span3" id="sidebar">
+                    <ul class="nav metro-nav-list bs-docs-sidenav affix-top">
+                        <li class="active">
+                            <a href="#casestudies">
+                                Case Studies
+                            </a>
+                            <ul class="nav">
+                                <li class="">
+                                    <a href="#GD96b">
+                                        Phone Call Graph
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#AmericanFootball">
+                                        American Football Network
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bs-docs-container span9">
+                    <div class="bs-docs-section-header">
+                        <h1 id="casestudies">
+                            Case Studies
+                        </h1>
+                        <br />
+                        <p class="lead">
+                            Environment: Google Chrome (64bit) - WebGL enabled
+                        </p>
+                    </div>
+                    <div class="bs-docs-section">
+                        <div>
+                            <h1 id="GD96b">
+                                Phone Call Graph
+                            </h1>
+                        </div>
+                        <hr />
+                        <div class="" style="background-color: #eee; font-size: 16px;">
+                            <table class="table" style="border: 0; margin: 10px;">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Data size:
+                                        </td>
+                                        <td>
+                                            |V| = 111, |E| = 193
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Layout algorithm:
+                                        </td>
+                                        <td>
+                                            KK Layout
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Ensemble size:
+                                        </td>
+                                        <td>
+                                            100
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Load cost (pre processed data):
+                                        </td>
+                                        <td>
+                                            15.4M
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="" style="margin-top: 10px">
+                            <img src="./img/GD96b.png" class="img-circle" style="width:700px" alt="Phone call graph data thumbnail"
+                            />
+                        </div>
+                        <div class="btn-group" style="margin-top: 10px">
+                            <a class="btn btn-inverse btn-large" href="./GD96b.html">
+                                Demo
+                            </a>
+                            <a class="btn btn-inverse btn-large" href="./data/output/PhoneCallGraph.json">
+                                Data
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bs-docs-section">
+                        <div>
+                            <h1 id="AmericanFootball">
+                                American Football Network
+                            </h1>
+                        </div>
+                        <hr />
+                        <div style="background-color: #eee; font-size: 16px;">
+                            <table class="table" style="border: 0; margin: 10px;">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Data size:
+                                        </td>
+                                        <td>
+                                            |V| = 115, |E| = 613
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Layout algorithm:
+                                        </td>
+                                        <td>
+                                            ForceAtlas2 & LinLog
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Ensemble size:
+                                        </td>
+                                        <td>
+                                            100
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Load cost (pre processed data):
+                                        </td>
+                                        <td>
+                                            17.5M
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="offset1" style="margin-top:10px">
+                            <img src="./img/AF.png" class="image-polaroid" style="width: 400px" alt="American football network data thumbnail"
+                            />
+                        </div>
+                        <div class="btn-group" style="margin-top: 10px">
+                            <a class="btn btn-inverse btn-large" href="./AmericanFootball.html">
+                                Demo
+                            </a>
+                            <a class="btn btn-inverse btn-large" href="./data/output/AmericanFootball.json">
+                                Data
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="bs-docs-footer">
+            <div class="container">
+                <p>
+                    A Framework for Uncertainty-aware Graph Layout Exploration
+                </p>
+            </div>
+        </footer>
+    </body>
+
+</html>
